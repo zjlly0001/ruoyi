@@ -13,8 +13,8 @@ pipeline {
         YAML_PATH = "cloud/deploy/"
         JAVA_DEPLOYMENT_NAME = "ruoyi-java.yaml"
         NODE_DEPLOYMENT_NAME = "ruoyi-nginx.yaml"
-        STATUS_URL = "http://qf.jenkins.vip:30210/job/ruoyi/${BUILD_NUMBER}"
-        CONSOLE_URL = "http://qf.jenkins.vip:30210/job/ruoyi/${BUILD_NUMBER}/console"
+        STATUS_URL = "http://192.168.245.128:30008/job/ruoyi/${BUILD_NUMBER}"
+        CONSOLE_URL = "http://192.168.245.128:30008/job/ruoyi/${BUILD_NUMBER}/console"
     }
     agent {
         kubernetes {
