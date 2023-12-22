@@ -197,7 +197,7 @@ pipeline {
                         sh """
                           docker build -t ${env.HARBOR_HOST}/${env.NAMESPACE_NAME}/${env.JAVA_REPOSITORY_NAME}:${env.JAVA_TAG} cloud/ruoyi-java
                           docker build -t ${env.HARBOR_HOST}/${env.NAMESPACE_NAME}/${env.NODE_REPOSITORY_NAME}:${env.NODE_TAG} cloud/ruoyi-nginx
-                          docker login ${env.HARBOR_HOST} --username ${env.USERNAME} --password ${env.PASSWORD} --password-stdin
+                          docker login ${env.HARBOR_HOST} --username ${env.USERNAME} --password ${env.PASSWORD}
                           docker push ${env.HARBOR_HOST}/${env.NAMESPACE_NAME}/${env.JAVA_REPOSITORY_NAME}:${env.JAVA_TAG}
                           docker push ${env.HARBOR_HOST}/${env.NAMESPACE_NAME}/${env.NODE_REPOSITORY_NAME}:${env.NODE_TAG}
                         """
