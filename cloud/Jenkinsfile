@@ -3,7 +3,7 @@ pipeline {
         PROJECT_NAME = "ruoyi"
         DOCKER_REPOSITORY_CREDENTIAL_ID = "455c3831-6979-4db7-8251-62c1cd2a9f27"
         HARBOR_HOST = "registry.cn-hangzhou.aliyuncs.com"
-        NAMESPACE_NAME = "zjlly"
+        NAMESPACE_NAME = "zjlly001"
         JAVA_REPOSITORY_NAME = "ruoyi-java"
         NODE_REPOSITORY_NAME = "rupyi-node"
         JAVA_TAG = "v1.0"
