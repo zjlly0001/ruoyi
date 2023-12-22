@@ -106,7 +106,7 @@ pipeline {
                 success {
                     // Maven 打包成功的钉钉消息配置
                     dingtalk (
-                        robot: '0575416a-66d7-4b54-9a97-960a685d2f5a',
+                        robot: 'c136f378-bddf-4d63-82f1-31af142775f1',
                         type: 'MARKDOWN',
                         title: '后端打包成功 ${PROJECT_NAME}',
                         text: [
@@ -124,7 +124,7 @@ pipeline {
                 failure {
                     // Maven 打包失败的钉钉消息配置
                     dingtalk (
-                        robot: '0575416a-66d7-4b54-9a97-960a685d2f5a',
+                        robot: 'c136f378-bddf-4d63-82f1-31af142775f1',
                         type: 'MARKDOWN',
                         title: '后端打包失败 ${PROJECT_NAME}',
                         text: [
@@ -154,7 +154,7 @@ pipeline {
                 success {
                     // Node.js 打包成功的钉钉消息配置
                     dingtalk (
-                        robot: '0575416a-66d7-4b54-9a97-960a685d2f5a',
+                        robot: 'c136f378-bddf-4d63-82f1-31af142775f1',
                         type: 'MARKDOWN',
                         title: '前端打包成功 ${PROJECT_NAME}',
                         text: [
@@ -172,7 +172,7 @@ pipeline {
                 failure {
                     // Node.js 打包失败的钉钉消息配置
                     dingtalk (
-                        robot: '0575416a-66d7-4b54-9a97-960a685d2f5a',
+                        robot: 'c136f378-bddf-4d63-82f1-31af142775f1',
                         type: 'MARKDOWN',
                         title: '前端打包失败 ${PROJECT_NAME}',
                         text: [
@@ -208,7 +208,7 @@ pipeline {
                 success {
                     // 构建镜像成功的钉钉消息配置
                     dingtalk (
-                        robot: '0575416a-66d7-4b54-9a97-960a685d2f5a',
+                        robot: 'c136f378-bddf-4d63-82f1-31af142775f1',
                         type: 'MARKDOWN',
                         title: '镜像构建成功 ${PROJECT_NAME}',
                         text: [
@@ -226,7 +226,7 @@ pipeline {
                 failure {
                     // 构建镜像失败的钉钉消息配置
                     dingtalk (
-                        robot: '0575416a-66d7-4b54-9a97-960a685d2f5a',
+                        robot: 'c136f378-bddf-4d63-82f1-31af142775f1',
                         type: 'MARKDOWN',
                         title: '镜像构建失败 ${PROJECT_NAME}',
                         text: [
@@ -258,7 +258,7 @@ pipeline {
                 success {
                     // 部署成功的钉钉消息配置
                     dingtalk (
-                        robot: '0575416a-66d7-4b54-9a97-960a685d2f5a',
+                        robot: 'c136f378-bddf-4d63-82f1-31af142775f1',
                         type: 'MARKDOWN',
                         title: 'k8s部署成功 ${PROJECT_NAME}',
                         text: [
@@ -276,7 +276,7 @@ pipeline {
                 failure {
                     // 部署失败的钉钉消息配置
                     dingtalk (
-                        robot: '0575416a-66d7-4b54-9a97-960a685d2f5a',
+                        robot: 'c136f378-bddf-4d63-82f1-31af142775f1',
                         type: 'MARKDOWN',
                         title: 'k8s部署失败 ${PROJECT_NAME}',
                         text: [
